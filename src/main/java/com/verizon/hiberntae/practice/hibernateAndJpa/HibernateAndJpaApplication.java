@@ -31,6 +31,7 @@ public class HibernateAndJpaApplication implements CommandLineRunner {
 		logger.info("Course FindById " + courseRepo.findById(100L));
 
 		courseRepo.deleteById(101L);
+
 		
 		logger.info("Course save " + courseRepo.save(new Course("python")));
 
